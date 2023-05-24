@@ -40,6 +40,13 @@ const CHALLENGE_COMMAND = {
   type: 1,
 };
 
-const ALL_COMMANDS = [TEST_COMMAND, CHALLENGE_COMMAND];
+// Command containing options
+const TRIVIA_COMMAND = {
+  name: 'trivia',
+  description: 'Get a random trivia question',
+  type: 1,
+};
+
+const ALL_COMMANDS = [TEST_COMMAND, CHALLENGE_COMMAND, TRIVIA_COMMAND];
 
 InstallGlobalCommands(process.env.APP_ID, ALL_COMMANDS);
